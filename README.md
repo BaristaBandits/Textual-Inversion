@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Hugging Face](https://img.shields.io/badge/huggingface-diffusers-orange)](https://github.com/huggingface/diffusers)
 
-This repository demonstrates **textual inversion** training using the [Hugging Face Diffusers](https://github.com/huggingface/diffusers) library with Stable Diffusion XL (SDXL).
+This repository demonstrates **textual inversion** training using the [Hugging Face Diffusers](https://github.com/huggingface/diffusers) library with Stable Diffusion 1.5 and Stable Diffusion XL (SDXL).
 
 ---
 
