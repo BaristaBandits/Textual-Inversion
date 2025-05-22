@@ -4,7 +4,7 @@ from pathlib import Path
 import argparse
 
 def main():
-    parser = argparse.ArgumentParser(description="Run Stable Diffusion with Textual Inversion")
+    parser = argparse.ArgumentParser(description="Run Stable Diffusion XL with Textual Inversion")
     parser.add_argument("--checkpoint", type=str, required=True, help="Path to textual inversion checkpoint")
     parser.add_argument("--token", type=str, required=True, help="Placeholder token to load")
     parser.add_argument("--output_dir", type=str, required=True, help="Directory to save generated images")
@@ -18,10 +18,16 @@ def main():
         use_safetensors=True
     ).to("cuda")
 
-    # Load learned embeddings
+    # Load learned embeddings for both base and refiner tokenizers
     pipeline.load_textual_inversion(
         args.checkpoint,
         token=args.token,
+        tokenizer=pipeline.tokenizer  # base text encoder tokenizer
+    )
+    pipeline.load_textual_inversion(
+        args.checkpoint,
+        token=args.token,
+        tokenizer=pipeline.tokenizer_refiner  # refiner text encoder tokenizer
     )
 
     # Prompt setup
@@ -52,3 +58,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
