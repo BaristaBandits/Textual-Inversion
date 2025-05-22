@@ -52,7 +52,7 @@ export DATA_DIR="Textual-Inversion/data/Bajirao_scene1"
 ### 3. Run the following command to train the textual inversion model (alter hyperparameters if required)
 ```bash
 
-accelerate launch --num_processes=1 --main_process_port=0  /Textual-Inversion/diffusers/examples/textual_inversion/textual_inversion.py \
+accelerate launch --num_processes=1 --main_process_port=0  /Textual-Inversion/diffusers/examples/textual_inversion/textual_inversion_sdxl.py \
 --pretrained_model_name_or_path=$MODEL_NAME \
 --train_data_dir=$DATA_DIR \
 --learnable_property="" \
