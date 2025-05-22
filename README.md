@@ -46,7 +46,7 @@ pip install -r requirements.txt
 ### 2. Import the data and directory and the model, for example
 ```bash
 export MODEL_NAME="stabilityai/stable-diffusion-xl-base-1.0"
-export DATA_DIR="Textual-Inversion/data/Bajirao_scene1"
+export DATA_DIR="Textual-Inversion/data/bajirao_scene1"
 ```
 
 ### 3. Run the following command to train the textual inversion model (alter hyperparameters if required)
