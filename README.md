@@ -66,7 +66,7 @@ accelerate launch --num_processes=1 --main_process_port=0  /Textual-Inversion/di
 --scale_lr \
 --lr_scheduler="constant" \
 --lr_warmup_steps=500 \
---output_dir="textual_inversion_bajirao_scene2" \
+--output_dir= <output_path> \
 ```
 ### 4. For Inferencing run the following command
 ```bash
