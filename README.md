@@ -35,10 +35,14 @@ This repository demonstrates **textual inversion** training using the [Hugging F
 
 ## Installation
 
-### 1. Clone This Repository
+### 1. Clone This Repository and prepare the data
 
 ```bash
 git clone https://github.com/BaristaBandits/Textual-Inversion.git
+cd Textual-Inversion
+mkdir data
+unzip bajirao_scene1.zip -d data
+unzip bajirao_scene2.zip -d data
 cd Textual-Inversion/diffusers/examples/textual_inversion
 pip install -r requirements.txt
 ```
