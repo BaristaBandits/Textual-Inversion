@@ -13,11 +13,6 @@ This repository demonstrates **textual inversion** training using the [Hugging F
 - [Features](#features)  
 - [Requirements](#requirements)  
 - [Installation](#installation)  
-- [Usage](#usage)  
-- [Environment Variables](#environment-variables)  
-- [Troubleshooting](#troubleshooting)  
-- [License](#license)  
-
 ---
 
 ## Features
