@@ -54,7 +54,7 @@ export MODEL_NAME="stabilityai/stable-diffusion-xl-base-1.0"
 export DATA_DIR="Textual-Inversion/data/Bajirao_scene1"
 ```
 
-### 3. Run the followinf command to train the textual inversion model (alter hyperparameters if required)
+### 3. Run the following command to train the textual inversion model (alter hyperparameters if required)
 ```bash
 
 accelerate launch --num_processes=1 --main_process_port=0  /Textual-Inversion/diffusers/examples/textual_inversion/textual_inversion.py \
@@ -73,7 +73,7 @@ accelerate launch --num_processes=1 --main_process_port=0  /Textual-Inversion/di
 --lr_warmup_steps=500 \
 --output_dir="textual_inversion_bajirao_scene2" \
 ```
-### 4. For Inferencing load the checkpoint onto the inference,py script
+### 4. For Inferencing run the following command
 ```bash
 python Inference.py \
   --checkpoint <checkpoint_path>
